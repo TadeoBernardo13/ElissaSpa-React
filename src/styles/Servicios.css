@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+# Content Section
+--------------------------------------------------------------*/
+.content {
+  width: 100%;
+  background-color: #0000008a;
+  background-image: url(/public/assets/patternBG.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: multiply;
+  margin-top: 10%;
+}
+
+.content .titleText {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  color: #fff;
+  font-family: var(--font-sexta);
+}
+
+.content p {
+  color: #fff;
+  font-family: var(--font-sexta);
+  font-size: 1rem;
+}
+
+.content .Text {
+  color: #fff;
+  font-family: var(--font-sexta);
+  font-size: 1.5rem;
+}

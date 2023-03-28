@@ -1,0 +1,110 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+  transition: all 0.5s;
+  padding: 30px 0;
+  background-color: #000;
+  box-shadow: 0px 8px 10px #5f5013;
+  position: relative;
+}
+
+.header button {
+  background-color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Desktop Navigation
+--------------------------------------------------------------*/
+.navbar ul .nav-link.active{
+  color: #d4af37;
+}
+
+@media (min-width: 1280px) {
+  .navbar-nav .desktopLogo {
+    display: block;
+  }
+  .navbar-nav .mobileLogo {
+    display: none;
+  }
+  .navbar-nav .logoContainer {
+    display: none;
+  }
+  .navbar-nav {
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+  }
+
+  .navbar ul a {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+
+  .navbar ul a:after,
+  .navbar ul a:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: orange;
+    transition: 0.5s;
+  }
+
+  .navbar ul a:after {
+    left: 0;
+    bottom: -10px;
+  }
+
+  .navbar ul a:before {
+    right: 0;
+    top: -10px;
+  }
+
+  .navbar ul a:hover {
+    color: #fff;
+  }
+  .navbar ul a:hover:after,
+  .navbar ul a:hover:before {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+  # Mobile Navigation
+  --------------------------------------------------------------*/
+@media (max-width: 1279px) {
+  .navbar-nav .desktopLogo {
+    display: none;
+  }
+  .navbar-nav .mobileLogo {
+    display: block;
+  }
+  .navbar-nav .logoContainer {
+    display: block;
+  }
+  .header {
+    box-shadow: 0px 5px 10px #5f5013;
+  }
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: var(--font-primary);
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+}

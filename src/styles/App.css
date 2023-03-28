@@ -1,0 +1,105 @@
+/* Fonts */
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Cardo", sans-serif;
+  --font-tertiary: "Italianno", cursive;
+  --font-quartery: "Spinnaker", sans-serif;
+  --font-quinta: CocoBold;
+  --font-sexta: Futura;
+}
+@font-face {
+  font-family: CocoCondesed;
+  src: url(/public/assets/fonts/Coco-Condensed.otf);
+}
+@font-face {
+  font-family: CocoBold;
+  src: url(/public/assets/fonts/Coco-Bold.otf);
+}
+@font-face {
+    font-family: Futura;
+    src: url(/public/assets/fonts/Futura\ Light.otf);
+  }
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  height: 90vh;
+  background-color: #0000003d;
+  background-image: url(/public/assets/heroPhoto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+  background-blend-mode: multiply;
+  box-shadow: 0px 2px 30px #ffe681;
+}
+
+.eslogan .fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.eslogan .fade-in.appear {
+  opacity: 1;
+}
+
+.eslogan {
+  width: 100%;
+  margin: 10% 0 10% 0;
+}
+.eslogan h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #000;
+  font-family: var(--font-tertiary);
+  letter-spacing: 5px;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    #462523 -10%,
+    #cb9b51 22%,
+    #f0da6b 45%,
+    #dfc95d 0%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 110%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+/*--------------------------------------------------------------
+# Content Section
+--------------------------------------------------------------*/
+.content {
+  width: 100%;
+  background-color: #0000008a;
+  background-image: url(/public/assets/patternBG.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: lighten;
+  margin-top: 10%;
+}
+
+.content p {
+  font-family: var(--font-quinta);
+  font-size: 2rem;
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+  # Mobile Navigation
+--------------------------------------------------------------*/
+@media (max-width: 1279px) {
+  .hero {
+    height: 45vh;
+    background-size: cover;
+    background-position: top;
+  }
+}
