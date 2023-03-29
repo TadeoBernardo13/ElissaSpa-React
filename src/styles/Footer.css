@@ -7,11 +7,27 @@
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+.footer .row-container {
+  width: 100%;
+}
+
+.footer .formulario h1 {
+  font-size: 2rem;
+  color: #fff;
+  font-family: var(--font-sexta);
+}
+
+.footer .address-row h3 {
+  font-size: 1rem;
+  color: #fff;
+  font-family: var(--font-sexta);
+}
+
 .footer .list {
   list-style: none;
   text-align: center;
   color: #fff;
-  font-family: var(--font-quartery);
+  font-family: var(--font-sexta);
   letter-spacing: 2px;
 }
 
@@ -35,4 +51,10 @@
 .footer .social-links a {
   color: #fff;
   font-size: 1.5rem;
+}
+
+@media (max-width: 1279px) {
+  .footer .address-row h3 {
+    font-size: 0.6rem;
+  }
 }

@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------
+# Content Section
+--------------------------------------------------------------*/
+.contentContact .containerCont {
+  padding: 5%;
+}
+
+.contentContact .titleText {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  color: #fff;
+  font-family: var(--font-sexta);
+}
+
+.contentContact p {
+  color: #fff;
+  font-family: var(--font-sexta);
+  font-size: 1rem;
+}
+
+.contentContact .Text {
+  color: #fff;
+  font-family: var(--font-sexta);
+  font-size: 1.5rem;
+}
+
+.contentContact .contacto {
+  letter-spacing: 0.2rem;
+  font-family: var(--font-sexta);
+}
+
+@media (max-width: 1279px) {
+  .contentContact .titleText {
+    font-size: 1.5rem;
+  }
+}
