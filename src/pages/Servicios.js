@@ -1,5 +1,4 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 import "../styles/Servicios.css";
 
 export default function Servicios() {
@@ -142,12 +141,15 @@ export default function Servicios() {
               </Fade>
             </div>
             <div className="col-lg-4 col-md-12 d-flex flex-column align-items-center contacto">
-              <Fade>
-                <p>For reservations or information:</p>
-                <div className="mt-3 text-center">
-                  <a href="#contactoForm" className="btn btn-outline-info rounded-pill p-4">CONTACTANOS</a>
-                </div>
-              </Fade>
+              <p>For reservations or information:</p>
+              <div className="mt-3 text-center">
+                <a
+                  href="#contactoForm"
+                  className="btn btn-outline-info rounded-pill p-4"
+                >
+                  CONTACTANOS
+                </a>
+              </div>
             </div>
           </div>
         </div>
