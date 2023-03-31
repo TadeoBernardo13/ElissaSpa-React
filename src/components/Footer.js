@@ -1,27 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../styles/Footer.css";
-import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Footer() {
-  const [formValues, setFormValues] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Aquí es donde enviarías el formulario
-    console.log(formValues);
-  };
+  const form = useRef();
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormValues({ ...formValues, [name]: value });
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ib5ha1h",
+        "template_6kywppm",
+        form.current,
+        "Z0v-QmL9v7wqKKOIg"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <>
-      <section className="footer d-flex flex-column align-items-center" id="contactoForm">
+      <section className="footer d-flex flex-column align-items-center">
         <div className="row d-flex align-items-center justify-content-center row-container">
           <div className="container col-lg-4 col-md-6">
             <div className="container-fluid">
@@ -72,10 +77,14 @@ export default function Footer() {
           </div>
 
           <div className="container col-lg-4 col-md-6 formulario">
-            <div className="container">
+            <div className="container" id="contactoForm">
               <h1 className="text-center mb-5">Agenda tu cita</h1>
-              <form onSubmit={handleSubmit} className="row">
+
+              {/* <form onSubmit={handleSubmit} className="row">
                 <div className="col-md-6">
+                  <label htmlFor="name" className="form-label">
+                    Nombre
+                  </label>
                   <input
                     placeholder="Tu nombre"
                     type="text"
@@ -88,6 +97,9 @@ export default function Footer() {
                   />
                 </div>
                 <div className="col-md-6 mt-3 mt-md-0">
+                  <label htmlFor="email" className="form-label">
+                    Correo electrónico
+                  </label>
                   <input
                     placeholder="Correo electrónico"
                     type="email"
@@ -100,6 +112,9 @@ export default function Footer() {
                   />
                 </div>
                 <div className="mt-3">
+                  <label htmlFor="subject" className="form-label">
+                    Asunto
+                  </label>
                   <input
                     placeholder="Asunto"
                     type="text"
@@ -112,6 +127,9 @@ export default function Footer() {
                   />
                 </div>
                 <div className="mt-3">
+                  <label htmlFor="message" className="form-label">
+                    Mensaje
+                  </label>
                   <textarea
                     placeholder="Mensaje"
                     className="form-control"
@@ -124,15 +142,28 @@ export default function Footer() {
                   ></textarea>
                 </div>
                 <div className="text-center mt-4">
-                  <button type="submit" className="btn btn-outline-dark">
+                  <button
+                    type="submit"
+                    className="btn btn-outline-dark"
+                    value="Submit"
+                  >
                     Send Message
                   </button>
                 </div>
+              </form> */}
+              <form ref={form} onSubmit={sendEmail}>
+                <label>Name</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message" />
+                <input type="submit" value="Send" />
               </form>
             </div>
           </div>
         </div>
-        <div className="row row-container address-row">
+        <div className="row row-container address-row mt-3">
           <div className="container">
             <h3 className="text-center">
               +52 686 198 3933 • Ave. Ramos Arizpe #1399, Col. Roma 21250 •
