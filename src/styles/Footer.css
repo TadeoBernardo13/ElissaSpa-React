@@ -47,14 +47,19 @@
   margin-right: 10px;
   margin-left: 10px;
 }
-
+.footer .social-links i {
+  font-size: 4rem;
+}
 .footer .social-links a {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 1279px) {
   .footer .address-row h3 {
     font-size: 0.6rem;
+  }
+  .footer .social-links a {
+    font-size: 1rem;
   }
 }

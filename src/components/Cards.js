@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Cards.css";
+import { NavLink } from "react-router-dom";
 
 export default function Cards() {
   return (
@@ -17,7 +18,7 @@ export default function Cards() {
                   <p>
                     When Elissa appears, she brings an eternal summer along.
                   </p>
-                  <a href="#">View more</a>
+                  <NavLink to="/Servicios">View more</NavLink>
                 </figcaption>
               </figure>
             </div>
@@ -32,7 +33,7 @@ export default function Cards() {
                   <p>
                     When Elissa appears, she brings an eternal summer along.
                   </p>
-                  <a href="#">View more</a>
+                  <NavLink to="/Servicios">View more</NavLink>
                 </figcaption>
               </figure>
             </div>
@@ -43,7 +44,7 @@ export default function Cards() {
                 <figcaption>
                   <h2>Colorímetria</h2>
                   <p>When Layla appears, she brings an eternal summer along.</p>
-                  <a href="#">View more</a>
+                  <NavLink to="/Servicios">View more</NavLink>
                 </figcaption>
               </figure>
             </div>
@@ -56,7 +57,7 @@ export default function Cards() {
                   <p>
                     When Elissa appears, she brings an eternal summer along.
                   </p>
-                  <a href="#">View more</a>
+                  <NavLink to="/Servicios">View more</NavLink>
                 </figcaption>
               </figure>
             </div>
@@ -71,7 +72,7 @@ export default function Cards() {
                   <p>
                     When Elissa appears, she brings an eternal summer along.
                   </p>
-                  <a href="#">View more</a>
+                  <NavLink to="/Servicios">View more</NavLink>
                 </figcaption>
               </figure>
             </div>
@@ -86,7 +87,7 @@ export default function Cards() {
                   <p>
                     When Elissa appears, she brings an eternal summer along.
                   </p>
-                  <a href="#">View more</a>
+                  <NavLink to="/Servicios">View more</NavLink>
                 </figcaption>
               </figure>
             </div>
@@ -101,7 +102,7 @@ export default function Cards() {
                   <p>
                     When Elissa appears, she brings an eternal summer along.
                   </p>
-                  <a href="#">View more</a>
+                  <NavLink to="/Servicios">View more</NavLink>
                 </figcaption>
               </figure>
             </div>
@@ -116,7 +117,7 @@ export default function Cards() {
                   <p>
                     When Elissa appears, she brings an eternal summer along.
                   </p>
-                  <a href="#">View more</a>
+                  <NavLink to="/Servicios">View more</NavLink>
                 </figcaption>
               </figure>
             </div>
@@ -131,7 +132,7 @@ export default function Cards() {
                   <p>
                     When Elissa appears, she brings an eternal summer along.
                   </p>
-                  <a href="#">View more</a>
+                  <NavLink to="/Servicios">View more</NavLink>
                 </figcaption>
               </figure>
             </div>
@@ -146,7 +147,7 @@ export default function Cards() {
                   <p>
                     When Elissa appears, she brings an eternal summer along.
                   </p>
-                  <a href="#">View more</a>
+                  <NavLink to="/Servicios">View more</NavLink>
                 </figcaption>
               </figure>
             </div>

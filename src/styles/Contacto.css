@@ -1,8 +1,29 @@
 /*--------------------------------------------------------------
 # Content Section
 --------------------------------------------------------------*/
-.contentContact .containerCont {
-  padding: 5%;
+.contentContact {
+  padding: 3%;
+}
+
+
+.contentContact .contentContainer {
+  padding: 3%;
+}
+
+.contentContact .contentContainer .whatsapp, .whatsapp i{
+  color: #fff;
+  font-size: 4rem;
+}
+
+.contentContact .formulario{
+  color: #4c5157;
+  font-family: var(--font-sexta);
+}
+.contentContact .formulario strong{
+  color: #fff;
+}
+.contentContact .formulario .gratitude{
+  font-size: 1.2rem
 }
 
 .contentContact .titleText {
@@ -24,13 +45,29 @@
   font-size: 1.5rem;
 }
 
-.contentContact .contacto {
+.contentContact .info {
   letter-spacing: 0.2rem;
   font-family: var(--font-sexta);
+}
+
+.contentContact .image-container{
+  width: 100%;
 }
 
 @media (max-width: 1279px) {
   .contentContact .titleText {
     font-size: 1.5rem;
   }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

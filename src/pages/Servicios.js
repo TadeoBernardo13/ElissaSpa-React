@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../styles/Servicios.css";
 
 export default function Servicios() {
@@ -130,12 +131,12 @@ export default function Servicios() {
             <div className="col-lg-4 col-md-12 d-flex flex-column align-items-center contacto">
               <p>For reservations or information:</p>
               <div className="mt-3 text-center">
-                <a
-                  href="#contactoForm"
+                <NavLink
+                  to="/Contacto"
                   className="btn btn-outline-info rounded-pill p-4"
                 >
                   CONTACTANOS
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>

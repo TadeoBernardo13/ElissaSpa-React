@@ -18,10 +18,6 @@ export default function App() {
       </section>
       <section className="content d-flex justify-content-center align-items-center">
         <div className="container">
-          <p className="text-center mb-5 firstText">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aut
-            libero eaque rerum explicabo soluta alias porro neque ut quibusdam.
-          </p>
           <Cards />
         </div>
       </section>
